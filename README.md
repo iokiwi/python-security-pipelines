@@ -1,16 +1,19 @@
 # Pipelines for Securing your Python Development Lifecycle
 
-See it on [GitHub](https://github.com/iokiwi/python-security-pipelines) | [GitLab](https://gitlab.com/iokiwi/python-security-pipelines)
+See it on [[GitHub](https://github.com/iokiwi/python-security-pipelines) | [GitLab](https://gitlab.com/iokiwi/python-security-pipelines)]
 
 Reference Repository from my Talk of the same title: [Pipelines for Securing your Python Development Lifecycle](https://docs.google.com/presentation/d/1hAYnZCIoPdgXLpZZsllKrhdKLscPrzpcAvUV5jrD8R4/edit?usp=sharing
 )
 
-Important files/directories
+### Important files/directories
 
- * [samples](samples/) - Contains samples of things that will cause the pipelines to fail
- * [.gitlab-ci.yml](.gitlab-ci.yml) - Source code for the security pipelines
- * Pipeline results: [GitLab](https://gitlab.com/iokiwi/python-security-pipelines/-/pipelines) | GitHub [TODO]
- * .github/workflows/security.yml [TODO]
+|||
+|---|---|
+[samples](samples/) | Contains samples of things that will cause the pipelines to fail
+[.gitlab-ci.yml](.gitlab-ci.yml) | GitLab CI Config
+[.github/workflows/security.yml](.github/workflows/security.yml) | GitHub CI Config
+Pipeline results | [[GitLab](https://gitlab.com/iokiwi/python-security-pipelines/-/pipelines) \| [GitHub](https://github.com/iokiwi/python-security-pipelines/actions/)]
+|||
 
 Please feel free to fork this repo and try it yourself. 
 
@@ -37,5 +40,4 @@ More reading and examples: [YAML Deserialization Attack in Python](https://net-s
 
 ## TODOs and Possible Enrichments
 
- * Translate it to Github actions as well
  * Share some other usefull scripts for CI
