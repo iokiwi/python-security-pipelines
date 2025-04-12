@@ -1,0 +1,25 @@
+stages:
+  - security-checks
+
+gitleaks:
+  stage: security-checks
+  image:
+    name: zricethezav/gitleaks:latest
+    entrypoint: [""]
+  script:
+    - gitleaks git . --verbose --redact        # Scans the entire git commit history (recommended)
+    # - gitleaks dir . --verbose --redact          # Just scans the most current 'snapshot'
+
+pip-audit:
+  stage: security-checks
+  image: python:latest
+  script:
+    - pip install pip-audit
+    - pip-audit -r samples/requirements.txt
+
+bandit:
+  stage: security-checks
+  image: python:latest
+  script:
+    - pip install bandit
+    - bandit -x .venv -r .
